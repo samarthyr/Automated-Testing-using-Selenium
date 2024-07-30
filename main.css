@@ -1,0 +1,151 @@
+/* Reset some basic elements */
+body, h1, h4 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Header and main content styling */
+header {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.heading h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.heading h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    margin-top: 20px;
+}
+
+/* Table styling */
+.table th, .table td {
+    text-align: center;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Form styling */
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Changed label color */
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mb-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button styling */
+.btn {
+    cursor: pointer;
+}
+
+/* Add images */
+.navbar-brand img, .tab-pane img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+}
+
+.tab-pane img {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Custom button and text color styles */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+}
+
+.nav-link, .navbar-toggler-icon {
+    color: #fff !important;
+}
+
+.nav-link.active {
+    color: #28a745 !important; /* Dark green for active link */
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #007bff !important; /* Dark blue for regular links */
+}
+
+.btn-primary, .btn-danger, .btn-success {
+    color: #ffffff !important; /* Ensure button text is white */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Dark blue */
+    border-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Dark red */
+    border-color: #dc3545;
+}
+
+.btn-success {
+    background-color: #28a745; /* Dark green */
+    border-color: #28a745;
+}
+
+/* Change button colors specifically for navbar buttons */
+.navbar-nav .nav-link {
+    color: #ffc107 !important; /* Dark yellow */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffca2c !important; /* Slightly lighter dark yellow for hover effect */
+}
+

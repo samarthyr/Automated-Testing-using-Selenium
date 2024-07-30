@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login Form Design | CodeLab</title>
+      <link rel="stylesheet" href="ss.css">
+      <script>
+         function validateLogin(event) {
+            event.preventDefault(); // Prevent the default form submission
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // Hardcoded username and password
+            const validUsername = 'user';
+            const validPassword = 'password';
+            
+            if (username === validUsername && password === validPassword) {
+               // Redirect to the index page if credentials are correct
+               window.location.href = 'dash.html';
+            } else {
+               alert('Invalid username or password');
+            }
+         }
+      </script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title">
+            Login Form
+         </div>
+         <form onsubmit="validateLogin(event)">
+            <div class="field">
+               <input type="text" id="username" required>
+               <label>Email Address</label>
+            </div>
+            <div class="field">
+               <input type="password" id="password" required>
+               <label>Password</label>
+            </div>
+            <div class="content">
+               <div class="checkbox">
+                  <input type="checkbox" id="remember-me">
+                  <label for="remember-me">Remember me</label>
+               </div>
+               <div class="pass-link">
+                  <a href="#">Forgot password?</a>
+               </div>
+            </div>
+            <div class="field">
+               <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">
+               Not a member? <a href="#">Signup now</a>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
