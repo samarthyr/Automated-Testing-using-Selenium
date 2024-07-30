@@ -83,7 +83,7 @@ def add_to_incoming_purchase(name, brand, quantity, price):
 
 def add_to_outgoing_orders(name, brand, quantity, price):
     driver.find_element(By.ID, 'contact-tab').click()
-    time.sleep(2)  # Adjust this sleep time as necessary
+    time.sleep(2)  
     driver.find_element(By.ID, 'outgoing_order_product_name').send_keys(name)
     driver.find_element(By.ID, 'outgoing_order_product_brand').send_keys(brand)
     driver.find_element(By.ID, 'outgoing_order_product_quantity').send_keys(quantity)
@@ -99,7 +99,7 @@ add_to_current_inventory('Product2', 'Brand2', '20', '200')
 
 
 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-time.sleep(5)  # Wait for a few seconds to observe the scroll down
+time.sleep(5) 
 
 
 add_to_incoming_purchase('Product3', 'Brand3', '30', '300')
